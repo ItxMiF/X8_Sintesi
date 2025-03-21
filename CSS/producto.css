@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal del producto */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Contenedor de la imagen */
+.product-image {
+    flex: 0 0 auto;
+}
+
+.product-image img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Contenedor de los detalles del producto */
+.product-details {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Título del producto */
+.product-details h2 {
+    color: #333;
+    margin: 0 0 20px 0;
+    font-size: 28px;
+}
+
+/* Párrafos de información */
+.product-details p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Texto en negrita */
+.product-details strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Precio */
+.product-details p strong:first-of-type {
+    font-size: 24px;
+    color: #2c5282;
+}
+
+/* Contenedor de botones */
+.actions {
+    text-align: right;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+}
+
+/* Estilo de los botones */
+.actions button {
+    padding: 12px 30px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #2c5282;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #1a365d;
+    transform: translateY(-2px);
+}
+
+.actions button:first-child {
+    background-color: #4a5568;
+}
+
+.actions button:first-child:hover {
+    background-color: #2d3748;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-image img {
+        max-width: 100%;
+    }
+
+    .product-details {
+        text-align: center;
+    }
+
+    .actions {
+        text-align: center;
+    }
+
+    .actions button {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - NAKOTO AUTO</title>
+
+    <style>
+        /* Contenedor del carrito */
+        #contenedor {
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo de los productos */
+        #producto1, #producto2, #producto3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #producto1:last-child, #producto2:last-child, #producto3:last-child {
+            border-bottom: none;
+        }
+
+        input[type="number"] {
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Carrito */
+        #carrito {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f06560;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        input[readonly] {
+            font-weight: bold;
+            border: none;
+            background: none;
+            color: white;
+        }
+
+        button {
+            background-color: #f06560;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e04f4c;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Carrito🛒</h1>
+</header>
+
+<h2 id="titulo">Carrito de Compras</h2>
+
+<section id="contenedor">
+    <form method="POST">
+        <!-- Producto 1 -->
+        <section id="producto1">
+            <label>Producto 1</label>
+            <input type="hidden" name="precio1" value="10">
+            <input type="number" name="cantidad1" min="0" value="0">
+        </section>
+
+        <!-- Producto 2 -->
+        <section id="producto2">
+            <label>Producto 2</label>
+            <input type="hidden" name="precio2" value="15">
+            <input type="number" name="cantidad2" min="0" value="0">
+        </section>
+
+        <!-- Producto 3 -->
+        <section id="producto3">
+            <label>Producto 3</label>
+            <input type="hidden" name="precio3" value="20">
+            <input type="number" name="cantidad3" min="0" value="0">
+        </section>
+
+        <!-- Total -->
+        <section id="carrito">
+            <label>Total: $</label>
+            <input type="text" name="total" readonly value="0">
+        </section>
+
+        <!-- Botón -->
+        <section id="boton-calcular">
+            <button type="submit">Calcular Total</button>
+        </section>
+
+        <!-- Botón de pago -->
+        <section id="boton-pagar">
+            <button type="button">Pagar</button>
+        </section>
+
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 NAKOTO AUTO. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

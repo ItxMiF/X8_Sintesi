@@ -1,0 +1,115 @@
+/* Body */
+#body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fb7b7b;
+    color: #000000;
+}
+
+/*Header */
+header {
+    background-color: #f06560;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*Logo en el header*/
+#Logo {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    height: 50px; 
+
+}
+/*Letra del header*/
+header a {
+    text-decoration: none;
+    color: #ecf0f1;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.button {
+    background-color: #f06560;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Titulo de la pagina principal */
+#titulo {
+    color: #fdfdfd;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* Paragrafo sobre nuestra empresa */
+#paragraf {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
+    text-align: justify;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* Foto fuergo */
+#Furgo {
+    display: block;
+    margin: auto;
+    max-width: 50%; /* Ajusta el tamaño si es necesario */
+    height: auto;
+}
+
+
+/* Estilo footer */
+footer {
+    background-color: #f06560;
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    flex-direction: column;  /* Asegura que el contenido se apile verticalmente */
+    text-align: center;      /* Centra el texto */
+    padding: 20px;
+    
+}
+/* Estilo del div del footer */
+footer div {
+    margin-bottom: 1rem;
+}
+
+/* Texto del footer */
+footer a {
+    text-decoration: none;
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+/* Contacto del footer */
+footer p {
+    display: inline;
+    margin: 0.5rem 0;
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+}

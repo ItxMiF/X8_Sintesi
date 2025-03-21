@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- Titulo -->
+        <title>Chapa y pintura - NAKOTO AUTO</title>
+
+        <!--Logo al lado del titulo -->
+        <link rel="shortcut icon" href="../IMG/Logo.png">
+        <link rel="stylesheet" href="../CSS/style.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            /* Estilo para las imágenes de los productos */
+            #producto1 img, #producto2 img {
+                width: 100%; 
+                height: auto;  
+                object-fit: cover; 
+                border-radius: 10px; 
+                max-height: 200px; 
+            }
+            /* Estilo productos */
+            #productos {
+                display: flex;             
+                justify-content: center;    
+                gap: 20px;                 
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Estilos de cada producto */
+            #producto1, #producto2 {
+                background-color: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 250px;
+            
+            }
+
+            /* Estilo precio */
+            #precio1, #precio2 {
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #f06560;
+            }
+
+            /* Estilo boton compra y carrito */
+            #boton-comprar, #boton-carrito{
+                display: inline-block;
+                background-color: #f06560;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+            }
+        </style>
+
+    </head>
+
+
+    <body id="body">
+        <body id="body">
+            <header>
+                <a href="../HTML/index.html">
+                    <img src="../IMG/Logo.png" id="Logo">
+                </a>
+    
+                <a href="../HTML/carrito.html" class="cart-icon">Carrito</a>
+                <a href="../HTML/inicio.html" class="button">Inicio sesión</a>
+                <a href="../HTML/nosotros.html">Sobre nosotros</a>
+                <a href="../HTML/neumaticos.html">Neumáticos</a>
+                <a href="../HTML/chapa.html">Chapa y pintura</a>
+                <a href="../HTML/ofertas.html">Ofertas</a>
+                <a href="../HTML/alquiler.html">Alquiler</a>
+                <a href="../HTML/tienda.html">Tienda</a>
+    
+
+        </header>
+        
+        <section id="productos">
+            <!-- Producto 1 -->
+            <div id="producto1">
+                <img src="../IMG/" alt="">
+                <h3>Estamos trabajando en ello</h3>
+                <p>.</p>
+                <p id="precio1"></p>
+                <a href="../HTML/producto3.html" id="boton-comprar">Comprar</a>
+                <a href="../HTML/carrito.html" id="boton-carrito">Carrito</a>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div id="producto2">
+                <img src="../IMG/" alt="">
+                <h3>Estamos trabajando en ello</h3>
+                <p>.</p>
+                <p id="precio2"></p>
+                <a href="../HTML/producto4.html" id="boton-comprar">Comprar</a>
+                <a href="../HTML/carrito.html" id="boton-carrito">Carrito</a>
+                
+            </div>
+        </section>
+
+
+        <footer>
+            <div>
+                <!-- Link redes sociales -->
+                <a href="https://facebook.com/x8nakotoauto">Facebook</a>
+                <a href="https://twitter.com/x8nakotoauto">Twitter</a>
+                <a href="https://instagram.com/x8nakotoauto">Instagram</a>
+            </div>
+            <div>
+                <!-- Nuetsros contactos -->
+                <p>Correo: nakotoauto@gmail.com</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Calle: C/ La Plaça El Bruc, Barcelona 08294</p>
+
+            </div>
+        </footer>
+    </body>
+
+</html>
